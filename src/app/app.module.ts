@@ -7,6 +7,7 @@ import { AComponentSlectersComponent } from './a-component-slecters/a-component-
 import { CustomAttuributeSlecterComponent } from './a-component-slecters/custom-atturibute-slecter/custom-atturibute-slecter.component';
 import { ClassSelecterComponent } from './a-component-slecters/class-selecter/class-selecter.component';
 import { BDataBintingComponent } from './b-data-binting/b-data-binting.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,8 @@ import { BDataBintingComponent } from './b-data-binting/b-data-binting.component
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
