@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BDataBintingComponent } from './b-data-binting.component';
+import { BTemplateSyntaxComponent } from './b-template-syntax.component';
 
-describe('BDataBintingComponent', () => {
-  let component: BDataBintingComponent;
-  let fixture: ComponentFixture<BDataBintingComponent>;
+describe('BTemplateSyntaxComponent', () => {
+  let component: BTemplateSyntaxComponent;
+  let fixture: ComponentFixture<BTemplateSyntaxComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BDataBintingComponent ]
+      declarations: [ BTemplateSyntaxComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BDataBintingComponent);
+    fixture = TestBed.createComponent(BTemplateSyntaxComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

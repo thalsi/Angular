@@ -1,0 +1,46 @@
+<h2>b-template-syntax works!</h2>
+<ol>
+    <li>String interpulation</li>
+    <li>Proparty bainting</li>
+    <li>Event bainting</li>
+    <li>Two way bainting</li>
+    <li>Templete ref varblies</li>
+</ol>
+
+<!-- string interpulation -->
+<p>{{'hi'}}</p>
+<p>{{2+2}}</p>
+<p>{{'thalsi'+'-'+'good'}}</p>
+<p>{{getStringInterpulation()}}</p>
+
+<!-- proparty bainting -->
+<!--core :- 
+        id
+        title
+        class
+        style -->
+<button disabled>Proparity bainting</button>
+<button [disabled]='propartyBaintingButton'>Proparty bainting click</button>
+<input type="text" [id]="propartyBanitingId">
+<input type="text" [title]="propartyTitle">
+
+<p class="a">normal Class</p>
+<p [class]="classNameb">Proparty calss</p>
+<p [class.c]='propartyBaintingButton'>Propart class</p>
+
+<p style="background-color: aqua;">Normal Style</p>
+<p [style.color]="'red'">Proparty Style</p>
+<p [style.color]="propartyColorStyple">Proparty Style</p>
+<p [style.color]="propartyBaintingButton?'red':'blue'">Proparty Style</p>
+
+<!-- event bainting -->
+<button (click)="clicks()">Event bainting </button>
+<button (click)='ClickEvents($event)'>ClicK Event</button>
+
+<!--Two banitng  -->
+<P><input type="text" [(ngModel)]="binding"></P>
+<P>{{"two way banitng declerar varbile is work --"+binding}}</P>
+
+<!-- template ref verable -->
+<input type="text" #fast>
+<button (click)='passData(fast.value)'>Click</button>

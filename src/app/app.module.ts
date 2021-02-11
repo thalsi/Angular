@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AComponentSlectersComponent } from './a-component-slecters/a-component-slecters.component';
 import { CustomAttuributeSlecterComponent } from './a-component-slecters/custom-atturibute-slecter/custom-atturibute-slecter.component';
 import { ClassSelecterComponent } from './a-component-slecters/class-selecter/class-selecter.component';
-import { BDataBintingComponent } from './b-data-binting/b-data-binting.component';
+import { BTemplateSyntaxComponent } from './b-template-syntax/b-template-syntax.component';
 import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     AComponentSlectersComponent,
     CustomAttuributeSlecterComponent,
     ClassSelecterComponent,
-    BDataBintingComponent,
+    BTemplateSyntaxComponent,
   ],
   imports: [
     BrowserModule,
