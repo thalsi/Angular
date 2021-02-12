@@ -44,3 +44,27 @@
 <!-- template ref verable -->
 <input type="text" #fast>
 <button (click)='passData(fast.value)'>Click</button>
+
+
+{{'hi string interpulatin'}}
+{{3+4}}
+{{strings}}
+
+<input type="text" [id]="userId">
+<button [disabled]='true'></button>
+
+<input type="text" (input)='inputTextfun($event)'>
+<button (click)='login()'>Clcik</button>
+<input type="text" (input)='name=$event.target.value'>
+{{name}}
+
+<input type="text" [(ngModel)]="bindings">
+{{bindings}}
+
+
+<input type="text" [value]="a" (change)='changefun($event)'>
+{{a}}
+<input type="text" [ngModel]="b" (ngModelChange)='modelchangefun($event)'>
+{{b}}
+<p>this are template ref</p>
+<input type="text" (change)='true' #idd>{{idd.value}}

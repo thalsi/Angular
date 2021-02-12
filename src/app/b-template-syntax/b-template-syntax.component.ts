@@ -12,7 +12,12 @@ export class BTemplateSyntaxComponent implements OnInit {
   binding:string;
   classNameb='b';
   propartyColorStyple="green";
+  name;
 
+  //day-2
+  strings:string='hi this datas';
+  userId:string='user name';
+  bindings:string='';
 
   constructor() { }
 
@@ -43,4 +48,23 @@ export class BTemplateSyntaxComponent implements OnInit {
     console.log(value);
     
   }
+
+  inputTextfun(event:any){
+    console.log(event);  
+  }
+
+  login(){
+    console.log('login');
+    
+  }
+    a;
+  changefun(e){
+    this.a=e.target.value;
+  }
+  b;
+  modelchangefun(e){
+    this.b=e;
+  }
+
+
 }
